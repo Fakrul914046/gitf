@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#2203bd);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,green);
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    position: relative;
+}
+.logo img{
+    width: 50px;
+    height: auto;
+}
+.logo{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    background-color:green;
+
+
+}
+.logo h1{
+    color:rgb(248, 5, 70)
+}
+.menu{
+    color: rgb(153, 51, 58);
+    font-size: 40px;
+    width: 90%;
+    height: 60px;
+    background-color: black;
+}
+.SearchArea{
+    position: fixed;
+	right: 90px;
+	top: 50px;
+	width:170px;
+	height: 45px;
+	background-color:#fff;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+	box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+	box-sizing: border-box;
+	z-index: 1;
+	border:1px solid rgba(167, 158, 245, 0.1);
+}
+.searchbox input{
+    width: 90px;
+    height:20px;
+    outline: none;
+    border: none;
+    color: #1F1F1F;
+    font-size: 1rem;
+	padding: 0px 10px;
+}
+.searchbox input::placeholder{
+    letter-spacing: 1px;
+}
+.section1{
+    position:relative;
+    
+}
+
+.section1 img{
+    height: 200px;
+}
+.section1Button{
+    position: absolute;
+    top:50%;
+    left:90%;
+    transform: translate(-90%,-50%);
+}
+.section1Button h1,h2{
+    line-height: 60px;
+    font-size: larger;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+span{
+    color: aqua;
+}
+.section1Button h1{
+    letter-spacing: 25px;
+}
+.btn{
+    width:150px;
+	height: 40px;
+	background-color: #1F1F1F;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;    
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+}
+.section1Button:hover{
+    color:red;
+    background-color: #6e64ff;
+    transition: all ease 0.5s;
+
+}
+.iconArea{
+    position:fixed;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	padding: 5px 0px;
+	z-index: 1;
+}
+.iconArea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.iconArea a i{
+	color:rgba(39,39,39,0.80);
+}
+.iconArea a:hover .fa-facebook-f{
+	color: #3b5998;
+}
+.iconArea a:hover .fa-twitter{
+	color: #00acee ;
+}
+.iconArea a:hover .fa-instagram{
+	color:  #3f729b ;
+}
+.iconArea a:hover .fa-youtube{
+ 
+	color: 	#FF0000;
+}
+.productSection{
+    width: 85%;
+	background-color:blue;
+	box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+    margin-left: 90px;
+    padding-right: 60px;
+	position: relative;
+	border-radius: 10px;
+}
+.productSection > h3{
+	display: flex;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    word-spacing: 2px;
+    font-weight: 100;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    border:5px solid red  ;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    width: 100%;
+    height: 800px;
+    background-color: rgb(10, 203, 171);
+}
+.productBox{
+    width:200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;    
+    position: relative;
+    background-color: brown;
+}
+.productBox img{
+    height: 180px;
+    width:90% ;
+}
+.BuyBtn{
+	position: absolute;
+    width:140px;
+	height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+	border-radius: 10px;
+    animation: fade 0.2s;
+    background:linear-gradient(120deg,#6b60ec 20%,#a166f4);
+}
+.productBox:hover .BuyBtn{
+	display: flex;
+}
+.productBox:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	background-color:green;
+}
+.about{
+    width: 85%;
+    margin-left: 90px;
+    margin-top: 20px;
+    padding-right: 60px;
+    display: flex;
+    background-color: green;
+    border-radius: 25px;
+    align-items: center;
+    align-content: center;
+    background-color: rebeccapurple;
+}
+.aboutBox{
+    width: 500px;
+    height: 200px;
+    background-color: red;
+}
+.aboutBox img{
+	width:80%;
+	height: 80%;
+    background-color: yellow;
+    margin-top: 10px;
+    
+}
+.aboutBox h1{
+	color:#333333;
+	font-weight: 700;
+	font-size:3rem;
+	margin:0px;
+}
+.aboutBox h4{
+	color: #333333;
+	font-weight: 400;
+	font-size:2rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.aboutBox p{
+	font-size: 1rem;
+	color:#bdbdbd;
+	letter-spacing: 0.5px;
+}
+.Notification{
+	width:100%;	
+	height:250px;
+	margin-bottom:30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Notification h3{
+    font-size: 2rem;
+    color: rgb(56, 56, 56);
+    }
+.NotificationInput{
+   width: 30%;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:5px 20px;
+   box-shadow: 2px 5px 30px rgba(0,0,0,0.1);
+   margin-top: 30px;
+   border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+}
+.NotificationInput input{
+    width:100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.NotificationButton{
+    width:120px;
+    height: 40px;
+    background-color: #202020;
+    border-radius: 20px;
+    color: #fff;display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+.NotificationButton:hover{
+    background-color:#6b60ec;
+    transition: all  ease 0.5s;
+}
+footer {
+    background-color: black!important;
+    padding:20px;
+}
+footer p {
+    text-align: center;
+    color: #f2f2f2;
+} 
+
